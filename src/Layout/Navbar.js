@@ -3,11 +3,11 @@ import { Collapse, Container, NavbarToggler, NavLink } from "reactstrap";
 import Scrollspy from "react-scrollspy";
 
 //import images
-import logoLight from "../assets/images/logo-light.png";
-import logoDark from "../assets/images/logo-dark.png";
+import logoLight from "../components/Images/rollable-logo-white.png";
+import logoDark from "../components/Images/rollable-logo-dark.png";
 import { Link } from "react-router-dom";
 
-const NavBar = ({isDark}) => {
+const NavBar = ({ isDark }) => {
   const [isOpenMenu, setisOpenMenu] = useState(false);
   const [navClass, setnavClass] = useState("");
 
@@ -33,7 +33,7 @@ const NavBar = ({isDark}) => {
       <span>
         <nav
           className={
-            "navbar navbar-expand-lg fixed-top " + 
+            "navbar navbar-expand-lg fixed-top " +
             isDarkClass +
             " sticky " +
             navClass
@@ -48,13 +48,13 @@ const NavBar = ({isDark}) => {
                     src={logoDark}
                     className="logo-light"
                     alt=""
-                    height="22"
+                    height="122"
                   />
                   <img
                     src={logoDark}
                     className="logo-dark"
                     alt=""
-                    height="22"
+                    height="122"
                   />
                 </>
               ) : (
@@ -63,13 +63,13 @@ const NavBar = ({isDark}) => {
                     src={logoDark}
                     className="logo-dark"
                     alt=""
-                    height="22"
+                    height="100"
                   />
                   <img
                     src={logoLight}
                     className="logo-light"
                     alt=""
-                    height="22"
+                    height="100"
                   />
                 </>
               )}
